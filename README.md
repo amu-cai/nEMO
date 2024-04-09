@@ -17,7 +17,6 @@ The nEMO dataset is provided as a whole, without predefined training and test sp
 ### Data Fields
 
 - `file_id` - filename, i.e. `{speaker_id}_{emotion}_{sentence_id}.wav`.
-- `audio` - dictionary containing audio array, path and sampling rate,
 - `emotion` - label corresponding to emotional state,
 - `raw_text` - original (orthographic) transcription of the audio,
 - `normalized_text` - normalized transcription of the audio,
