@@ -6,23 +6,27 @@ nEMO is a simulated dataset of emotional speech in the Polish language. The corp
 
 ## Content
 
-Inside the `samples` folder, you'll find audio files named according to the `file_id` attribute listed in `data.tsv`. This TSV file contains attributes for each audio sample, including emotion labels, speaker information, and transcriptions.
+Inside the `samples` folder, you'll find audio files named according to the `file_id` attribute listed in `data.tsv`. This TSV file contains attributes for each audio sample, including:
+
+- `file_id` - filename, i.e. `{speaker_id}_{emotion}_{sentence_id}.wav`,
+
+- `emotion` - label corresponding to emotional state,
+
+- `raw_text` - original (orthographic) transcription of the audio,
+
+- `normalized_text` - normalized transcription of the audio,
+
+- `speaker_id` - id of speaker,
+
+- `gender` - gender of the speaker,
+
+- `age` - age of the speaker.
 
 ## Usage
 
 To work with the nEMO dataset on GitHub, you may clone the repository and access the files directly within the `samples` folder. Corresponding metadata can be found in the `data.tsv` file.
 
 The nEMO dataset is provided as a whole, without predefined training and test splits. This allows researchers and developers flexibility in creating their splits based on the specific needs.
-
-### Data Fields
-
-- `file_id` - filename, i.e. `{speaker_id}_{emotion}_{sentence_id}.wav`.
-- `emotion` - label corresponding to emotional state,
-- `raw_text` - original (orthographic) transcription of the audio,
-- `normalized_text` - normalized transcription of the audio,
-- `speaker_id` - id of speaker,
-- `gender` - gender of the speaker,
-- `age` - age of the speaker.
 
 ## Supported Tasks
 
