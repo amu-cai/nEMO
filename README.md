@@ -1,63 +1,35 @@
 # nEMO: Dataset of Emotional Speech in Polish
 
-## Dataset Description
+## Overview
 
 nEMO is a simulated dataset of emotional speech in the Polish language. The corpus contains over 3 hours of samples recorded with the participation of nine actors portraying six emotional states: anger, fear, happiness, sadness, surprise, and a neutral state. The text material used was carefully selected to represent the phonetics of the Polish language. The corpus is available for free under the Creative Commons license (CC BY-NC-SA 4.0).
 
-### Example Usage
+## Content
 
-The nEMO dataset can be loaded and processed using the datasets library:
+Inside the `samples` folder, you'll find audio files named according to the `file_id` attribute listed in `data.tsv`. This TSV file contains attributes for each audio sample, including emotion labels, speaker information, and transcriptions.
 
-```python
-from datasets import load_dataset
+## Usage
 
-nemo = load_dataset("amu-cai/nEMO", split="train")
-```
+To work with the nEMO dataset on GitHub, you may clone the repository and access the files directly within the `samples` folder. Corresponding metadata can be found in the `data.tsv` file.
 
-### Supported Tasks
-
-- `audio-classification`: This dataset was mainly created for the task of speech emotion recognition. Each recording is labeled with one of six emotional states (anger, fear, happiness, sadness, surprised, and neutral). Additionally, each sample is labeled with speaker id and speaker gender. Because of that, the dataset can also be used for different audio classification tasks.
-- `automatic-speech-recognition`: The dataset includes orthographic and normalized transcriptions for each audio recording, making it a useful resource for automatic speech recognition (ASR) tasks. The sentences were carefully selected to cover a wide range of phonemes in the Polish language.
-- `text-to-speech`: The dataset contains emotional audio recordings with transcriptions, which can be valuable for developing TTS systems that produce emotionally expressive speech.
-
-### Languages
-
-nEMO contains audio and transcription in Polish language.
-
-## Dataset Structure
-
-### Data Instances
-
-```python
-{
-  'audio': {
-    'path': None,
-    'array': array([ 6.10351562e-05, -3.05175781e-05, -3.05175781e-05, ...,
-      6.10351562e-05, -1.22070312e-04,  1.83105469e-04]),
-    'sampling_rate': 24000
-  },
-  'emotion': 'surprised',
-  'raw_text': 'Ucho wykrywa dźwięki o różnej częstotliwości.',
-  'normalized_text': 'ucho wykrywa dźwięki o różnej częstotliwości',
-  'speaker_id': 'WR0',
-  'gender': 'male',
-  'age': '23'
-}
-```
+The nEMO dataset is provided as a whole, without predefined training and test splits. This allows researchers and developers flexibility in creating their splits based on the specific needs.
 
 ### Data Fields
 
-- `audio` (audio) - dictionary containing audio array, path and sampling rate,
-- `emotion` (string) - label corresponding to emotional state,
-- `raw_text` (string) - original (orthographic) transcription of the audio,
-- `normalized_text` (string) - normalized transcription of the audio,
-- `speaker_id` (string) - id of speaker,
-- `gender` (string) - gender of the speaker,
-- `age` (string) - age of the speaker.
+- `file_id` - filename, i.e. `{speaker_id}_{emotion}_{sentence_id}.wav`.
+- `audio` - dictionary containing audio array, path and sampling rate,
+- `emotion` - label corresponding to emotional state,
+- `raw_text` - original (orthographic) transcription of the audio,
+- `normalized_text` - normalized transcription of the audio,
+- `speaker_id` - id of speaker,
+- `gender` - gender of the speaker,
+- `age` - age of the speaker.
 
-### Data Splits
+## Supported Tasks
 
-The nEMO dataset is provided as a whole, without predefined training and test splits. This allows researchers and developers flexibility in creating their splits based on the specific needs.
+- **Audio classification:** This dataset was mainly created for the task of speech emotion recognition. Each recording is labeled with one of six emotional states (anger, fear, happiness, sadness, surprised, and neutral). Additionally, each sample is labeled with speaker id and speaker gender. Because of that, the dataset can also be used for different audio classification tasks.
+- **Automatic Speech Recognition:** The dataset includes orthographic and normalized transcriptions for each audio recording, making it a useful resource for automatic speech recognition (ASR) tasks. The sentences were carefully selected to cover a wide range of phonemes in the Polish language.
+- **Text-to-Speech:** The dataset contains emotional audio recordings with transcriptions, which can be valuable for developing TTS systems that produce emotionally expressive speech.
 
 ## Additional Information
 
