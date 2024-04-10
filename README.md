@@ -42,7 +42,7 @@ The dataset is available under the Creative Commons license (CC BY-NC-SA 4.0).
 
 ### Citation Information
 
-You can access the nEMO paper at [link]. Please cite the paper when referencing the nEMO dataset as:
+You can access the nEMO paper at [arXiv](https://arxiv.org/abs/2404.06292). Please cite the paper when referencing the nEMO dataset as:
 
 ```
 @misc{christop2024nemo,
