@@ -45,7 +45,14 @@ The dataset is available under the Creative Commons license (CC BY-NC-SA 4.0).
 You can access the nEMO paper at [link]. Please cite the paper when referencing the nEMO dataset as:
 
 ```
-@article{}
+@misc{christop2024nemo,
+    title={nEMO: Dataset of Emotional Speech in Polish}, 
+    author={Iwona Christop},
+    year={2024},
+    eprint={2404.06292},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
 ```
 
 ### Contributions
