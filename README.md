@@ -42,16 +42,26 @@ The dataset is available under the Creative Commons license (CC BY-NC-SA 4.0).
 
 ### Citation Information
 
-You can access the nEMO paper at [arXiv](https://arxiv.org/abs/2404.06292). Please cite the paper when referencing the nEMO dataset as:
+You can access the nEMO paper at [ACL Anthology](https://aclanthology.org/2024.lrec-main.1059/). Please cite the paper when referencing the nEMO dataset as:
 
 ```
-@misc{christop2024nemo,
-    title={nEMO: Dataset of Emotional Speech in Polish}, 
-    author={Iwona Christop},
-    year={2024},
-    eprint={2404.06292},
-    archivePrefix={arXiv},
-    primaryClass={cs.CL}
+@inproceedings{christop-2024-nemo-dataset,
+    title = "n{EMO}: Dataset of Emotional Speech in {P}olish",
+    author = "Christop, Iwona",
+    editor = "Calzolari, Nicoletta  and
+      Kan, Min-Yen  and
+      Hoste, Veronique  and
+      Lenci, Alessandro  and
+      Sakti, Sakriani  and
+      Xue, Nianwen",
+    booktitle = "Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)",
+    month = may,
+    year = "2024",
+    address = "Torino, Italia",
+    publisher = "ELRA and ICCL",
+    url = "https://aclanthology.org/2024.lrec-main.1059",
+    pages = "12111--12116",
+    abstract = "Speech emotion recognition has become increasingly important in recent years due to its potential applications in healthcare, customer service, and personalization of dialogue systems. However, a major issue in this field is the lack of datasets that adequately represent basic emotional states across various language families. As datasets covering Slavic languages are rare, there is a need to address this research gap. This paper presents the development of nEMO, a novel corpus of emotional speech in Polish. The dataset comprises over 3 hours of samples recorded with the participation of nine actors portraying six emotional states: anger, fear, happiness, sadness, surprise, and a neutral state. The text material used was carefully selected to represent the phonetics of the Polish language adequately. The corpus is freely available under the terms of a Creative Commons license (CC BY-NC-SA 4.0).",
 }
 ```
 
